@@ -1,0 +1,37 @@
+.wrapper{
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.image{
+	background-image: url(golf.jpg);
+	background-size: cover;
+	background-position-x: -85px;
+	height: 300px;
+	width: 300px;
+	float: left;
+	margin: 0 30px;
+	margin-bottom: 20px;
+	border: solid 10px brown;
+}
+
+@media all and (max-width: 1000px) and (min-width: 900px){
+	body{
+		border:3px black;
+	}
+	.image{
+		background-image: url(putter.jpg);
+	}
+}
+
+@media all and (max-width: 480px){
+	body{
+		background-color: yellow;
+	}
+	.wrapper{
+		background-color: orange;
+	}
+	.image{
+		border: none;
+	}
+}
